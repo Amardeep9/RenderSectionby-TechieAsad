@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header style="background-color:brown">
+        <h3>This is Header</h3>
+
+        @RenderSection("header", required:true)
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    @RenderSection("footerkeUppar",required:false)
+    <footer style="background-color:lightseagreen">
+        <h5>Copyright@@2019</h5>
+
+    </footer>
+</body>
+</html>
